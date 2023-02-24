@@ -1,13 +1,12 @@
 package edu.wku;
 
-import edu.wku.smallestposnum.SmallestPosNum;
+import edu.wku.sumofstring.SumOfString;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(SmallestPosNum.smallestPosNum(new int[]{1,2,3}));
-        System.out.println(SmallestPosNum.smallestPosNum(new int[]{0,2,5}));
-        System.out.println(SmallestPosNum.smallestPosNum(new int[]{-2,5,-1,3,-4}));
-        System.out.println(SmallestPosNum.smallestPosNum(new int[]{-2,-9,-1,-4}));
-        System.out.println(SmallestPosNum.smallestPosNum(new int[]{1231,10,-15,-1,16,98,-100,0}));
+        System.out.println(SumOfString.sumOfString("ertsdfg"));
+        System.out.println(SumOfString.sumOfString("er23df6g"));
+        System.out.println(SumOfString.sumOfString("er0df0g"));
+        System.out.println(SumOfString.sumOfString("1w23k   u   6"));
     }
 }
