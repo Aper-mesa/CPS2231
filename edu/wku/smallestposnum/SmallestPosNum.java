@@ -9,9 +9,7 @@ public class SmallestPosNum {
                 break;
             }
         }
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] > 0 && nums[i] < min) min = nums[i];
-        }
+        for (int i = 1; i < nums.length; i++) if (nums[i] > 0 && nums[i] < min) min = nums[i];
         return Math.max(min, 0);
     }
 }
