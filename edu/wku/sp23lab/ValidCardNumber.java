@@ -1,9 +1,10 @@
-package eku.wku.sp23lab;
+package edu.wku.sp23lab;
 
 public class ValidCardNumber {
     public static boolean isValidCard(long number) {
         String str = number + "";
-        if (!(str.startsWith("4") || str.startsWith("5") || str.startsWith("37") || str.startsWith("6"))) return false;
+        if (!(str.startsWith("4") || str.startsWith("5") || str.startsWith("37") || str.startsWith("6")) || str.length() < 13 || str.length() > 16)
+            return false;
         String strR = new StringBuilder(str).reverse().toString();
         int sum1 = 0;
         for (int i = 1; i < strR.length(); i++) {
