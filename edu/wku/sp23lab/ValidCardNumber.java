@@ -7,18 +7,16 @@ public class ValidCardNumber {
             return false;
         String strR = new StringBuilder(str).reverse().toString();
         int sum1 = 0;
-        for (int i = 1; i <= strR.length(); i++) {
+        for (int i = 1; i < strR.length(); i++) {
             int digit = Integer.parseInt(strR.substring(i, i++ + 1)) * 2;
             if (digit > 9) digit = digit % 10 + digit / 10;
             sum1 += digit;
         }
-        System.out.println(sum1);
         int sum2 = 0;
         for (int i = 0; i < strR.length(); i++) {
             int digit = Integer.parseInt(strR.substring(i, i++ + 1));
             sum2 += digit;
         }
-        System.out.println(sum2);
         return (sum1 + sum2) % 10 == 0;
     }
 }
